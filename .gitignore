@@ -8,3 +8,4 @@ data/vector_store/
 *.egg-info/
 evals/latest_report.json
 enterprise_agent_project_spec.docx
+data/memory_store/long_term_memory.json
