@@ -1,0 +1,43 @@
+[project]
+name = "enterprise-knowledge-action-agent"
+version = "0.1.0"
+description = "Enterprise Knowledge & Automation Agent with LangChain + LangGraph"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "langchain>=1.0.0",
+  "langgraph>=0.2.60",
+  "langsmith>=0.1.120",
+  "langchain-openai>=0.3.0",
+  "langchain-community>=0.3.0",
+  "langchain-text-splitters>=0.3.0",
+  "langchain-chroma>=0.2.0",
+  "langchain-mcp-adapters>=0.1.0",
+  "pydantic>=2.8.0",
+  "pydantic-settings>=2.3.0",
+  "chromadb>=0.5.0",
+  "pypdf>=5.0.0",
+  "python-dotenv>=1.0.1",
+  "pytest>=8.3.2"
+]
+
+[project.optional-dependencies]
+dev = [
+  "ruff>=0.6.0",
+  "mypy>=1.10.0"
+]
+
+[project.scripts]
+enterprise-agent = "app.main:main"
+ingest-kb = "scripts.ingest_docs:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["app", "app.rag", "app.skills", "app.memory", "app.mcp"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

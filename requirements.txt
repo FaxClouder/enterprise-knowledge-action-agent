@@ -1,0 +1,14 @@
+langchain>=1.0.0
+langgraph>=0.2.60
+langsmith>=0.1.120
+langchain-openai>=0.3.0
+langchain-community>=0.3.0
+langchain-text-splitters>=0.3.0
+langchain-chroma>=0.2.0
+langchain-mcp-adapters>=0.1.0
+pydantic>=2.8.0
+pydantic-settings>=2.3.0
+chromadb>=0.5.0
+pypdf>=5.0.0
+python-dotenv>=1.0.1
+pytest>=8.3.2

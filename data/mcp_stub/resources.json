@@ -1,0 +1,14 @@
+{
+  "mcp://enterprise/sales_schema": {
+    "title": "Sales Schema",
+    "content": "Table sales_orders(order_id, order_date, amount, region, channel, status)."
+  },
+  "mcp://enterprise/ops_calendar": {
+    "title": "Ops Calendar",
+    "content": "Q2 release freeze starts at 2026-06-20 and ends at 2026-06-25."
+  },
+  "mcp://enterprise/compliance_notice": {
+    "title": "Compliance Notice",
+    "content": "Only read-only MCP tools are allowed in this demo project."
+  }
+}

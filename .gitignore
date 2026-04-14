@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+data/vector_store/
+.idea/
+*.egg-info/
+evals/latest_report.json
+enterprise_agent_project_spec.docx
